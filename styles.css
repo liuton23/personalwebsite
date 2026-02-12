@@ -274,7 +274,9 @@ body {
 
 /* Buttons - Terminal Style */
 .btn {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     padding: 14px 35px;
     border-radius: 8px;
     text-decoration: none;
@@ -285,6 +287,16 @@ body {
     overflow: hidden;
     font-family: 'Consolas', monospace;
     letter-spacing: 1px;
+}
+
+.btn svg {
+    transition: var(--transition-smooth);
+    position: relative;
+    z-index: 2;
+}
+
+.btn:hover svg {
+    transform: scale(1.1) rotate(5deg);
 }
 
 .btn::before {
@@ -309,8 +321,16 @@ body {
     background: linear-gradient(135deg, var(--primary-cyan), var(--primary-blue));
     color: var(--bg-primary);
     box-shadow: var(--glow-md);
+}
+
+.btn-primary svg,
+.btn-primary,
+.btn-secondary svg,
+.btn-secondary,
+.btn-outline svg,
+.btn-outline {
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .btn-primary:hover {
@@ -950,6 +970,11 @@ footer::before {
         left: 1px;
     }
 
+    .timeline-content::before {
+        opacity: 0.1;
+        font-size: 1.2rem;
+    }
+
     .projects-grid {
         grid-template-columns: 1fr;
     }
@@ -975,6 +1000,10 @@ footer::before {
     .hero-content h2 {
         font-size: 1rem;
         letter-spacing: 1px;
+    }
+
+    .timeline-content::before {
+        display: none;
     }
 
     .timeline-content,
