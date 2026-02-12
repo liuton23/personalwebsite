@@ -38,9 +38,9 @@ window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
 
     if (currentScroll <= 0) {
-        navbar.style.boxShadow = '0 10px 15px -3px rgba(0, 0, 0, 0.1)';
+        navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.3)';
     } else {
-        navbar.style.boxShadow = '0 20px 25px -5px rgba(0, 0, 0, 0.1)';
+        navbar.style.boxShadow = '0 4px 30px rgba(0, 217, 255, 0.2)';
     }
 
     lastScroll = currentScroll;
@@ -125,7 +125,8 @@ if (heroTitle) {
     // typeWriter();
 }
 
-// Console message for developers
-console.log('%c👋 Hi there!', 'font-size: 20px; font-weight: bold; color: #2563eb;');
-console.log('%cThanks for checking out the console! Feel free to reach out if you want to connect.', 'font-size: 14px; color: #6b7280;');
-console.log('%c📧 trevor.liu28@gmail.com', 'font-size: 14px; color: #2563eb;');
+// Console message for developers (terminal theme)
+console.log('%c> Hi there! 👋', 'font-size: 20px; font-weight: bold; color: #00d9ff; text-shadow: 0 0 10px rgba(0, 217, 255, 0.5);');
+console.log('%c$ Thanks for checking out the console!', 'font-size: 14px; color: #00ff88;');
+console.log('%c  Feel free to reach out if you want to connect.', 'font-size: 14px; color: #94a3b8;');
+console.log('%c→ trevor.liu28@gmail.com', 'font-size: 14px; color: #00d9ff; font-weight: bold;');
