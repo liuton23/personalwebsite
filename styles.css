@@ -590,6 +590,13 @@ section:nth-child(even) {
     box-shadow: var(--glow-lg), var(--shadow-dark);
 }
 
+.project-card-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    display: block;
+}
+
 .project-card > * {
     padding: 0 2rem;
 }
