@@ -77,7 +77,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe timeline items, project cards, and other elements
-const animatedElements = document.querySelectorAll('.timeline-item, .project-card, .education-card, .skill-category');
+const animatedElements = document.querySelectorAll('.timeline-item, .project-card, .education-card, .skill-category, .photo-item');
 animatedElements.forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(30px)';
@@ -123,6 +123,33 @@ if (heroTitle) {
 
     // Uncomment to enable typing effect
     // typeWriter();
+}
+
+// Lightbox for photography
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const lightboxClose = document.getElementById('lightbox-close');
+
+document.querySelectorAll('.photo-item img').forEach(img => {
+    img.addEventListener('click', () => {
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+});
+
+lightboxClose.addEventListener('click', closeLightbox);
+lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+});
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeLightbox();
+});
+
+function closeLightbox() {
+    lightbox.classList.remove('active');
+    document.body.style.overflow = '';
 }
 
 // Console message for developers (terminal theme)
