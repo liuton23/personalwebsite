@@ -12,6 +12,7 @@ A premium dark console-themed portfolio website featuring a sleek terminal aesth
 
 - **Terminal Aesthetic** - Monospace fonts (Consolas, Monaco, Fira Code) for authentic console feel
 - **Cyberpunk Color Palette** - Electric cyan (#00d9ff), blue (#0ea5e9), purple accents
+- **Custom Favicon** - Inline SVG `tl` initials in cyan on dark background, no external file needed
 - **Neon Glow Effects** - Subtle glowing effects on interactive elements
 - **Console Symbols** - Terminal prompts (>, $, //) throughout the interface
 - **Smooth Animations** - Custom cubic-bezier transitions (400ms) for professional feel
@@ -24,6 +25,7 @@ A premium dark console-themed portfolio website featuring a sleek terminal aesth
 - **Hover Transformations** - Cards lift and glow on interaction
 - **Custom Scrollbar** - Cyan gradient scrollbar with glow effect
 - **Scan Lines** - Subtle terminal scan line effect in hero section
+- **Particle Background** - Floating cyan/purple particle network in hero section (hover to repulse, click to spawn)
 
 ### 📱 Fully Responsive
 
@@ -61,6 +63,8 @@ Personal-Website/
 - **HTML5** - Semantic markup
 - **CSS3** - Custom properties, animations, gradients, flexbox, grid
 - **JavaScript (Vanilla)** - Intersection Observer, scroll effects, mobile menu
+- **particles.js** - Hero section particle background effect
+- **Google Analytics (GA4)** - Traffic and engagement tracking
 - **Responsive Design** - Mobile-first approach
 
 ## 💻 Local Development
@@ -197,15 +201,9 @@ Open the browser console (F12) to see a custom terminal-themed message with:
 
 ## 📝 To-Do / Future Enhancements
 
-- [x] Add project screenshots/images
-- [x] Implement downloadable resume PDF
 - [ ] Add contact form with backend
-- [ ] Create blog section
-- [x] Integrate analytics (Google Analytics)
+- [ ] Add project screenshots/images
 - [ ] Add more terminal animations (typing effects)
-- [x] Create particle.js background effect
-- [ ] Add language toggle (i18n)
-- [ ] Implement service worker for offline support
 
 ## 📄 License
 
