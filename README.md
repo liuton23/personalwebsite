@@ -9,6 +9,7 @@ A premium dark console-themed portfolio website featuring a sleek terminal aesth
 ## ✨ Features
 
 ### 🎨 Premium Dark Console Design
+
 - **Terminal Aesthetic** - Monospace fonts (Consolas, Monaco, Fira Code) for authentic console feel
 - **Cyberpunk Color Palette** - Electric cyan (#00d9ff), blue (#0ea5e9), purple accents
 - **Neon Glow Effects** - Subtle glowing effects on interactive elements
@@ -16,6 +17,7 @@ A premium dark console-themed portfolio website featuring a sleek terminal aesth
 - **Smooth Animations** - Custom cubic-bezier transitions (400ms) for professional feel
 
 ### 🖥️ Interactive Elements
+
 - **Glowing Navigation** - Navbar with terminal prompt symbols and hover effects
 - **Terminal Windows** - Project cards styled as console windows with colored dots (● ● ●)
 - **Pulsing Timeline** - Animated timeline dots with gradient glow
@@ -24,12 +26,14 @@ A premium dark console-themed portfolio website featuring a sleek terminal aesth
 - **Scan Lines** - Subtle terminal scan line effect in hero section
 
 ### 📱 Fully Responsive
+
 - Mobile-optimized hamburger menu
 - Adaptive layouts for all screen sizes
 - Touch-friendly interactions
 - Responsive typography and spacing
 
 ### 🎯 Sections Include
+
 - **Hero** - Gradient name with blinking cursor and personal introduction
 - **About** - Professional summary with job-seeking status
 - **Experience** - Interactive timeline with console-style cards
@@ -62,6 +66,7 @@ Personal-Website/
 ## 💻 Local Development
 
 ### Quick Start
+
 ```bash
 # Clone the repository
 git clone https://github.com/liuton23/personalwebsite.git
@@ -74,6 +79,7 @@ start index.html
 ```
 
 ### Using Live Server (Recommended)
+
 1. Install "Live Server" extension in VSCode
 2. Right-click `index.html` → "Open with Live Server"
 3. Enjoy auto-reload on file changes!
@@ -81,6 +87,7 @@ start index.html
 ## 🌐 Deployment Options
 
 ### GitHub Pages (Recommended)
+
 1. Push code to your GitHub repository
 2. Go to **Settings** → **Pages**
 3. Source: Select **main** branch, **/ (root)** folder
@@ -88,11 +95,13 @@ start index.html
 5. Site will be live at: `https://liuton23.github.io/personalwebsite/`
 
 ### Netlify
+
 1. Visit [netlify.com](https://www.netlify.com/)
 2. Drag and drop the project folder
 3. Instant deployment with custom URL
 
 ### Vercel
+
 1. Visit [vercel.com](https://vercel.com/)
 2. Import your GitHub repository
 3. Deploy with one click
@@ -100,30 +109,32 @@ start index.html
 ## 🎨 Customization
 
 ### Color Scheme
+
 Edit CSS variables in `styles.css`:
 
 ```css
 :root {
-    /* Dark Console Theme Colors */
-    --bg-primary: #0a0e27;          /* Main background */
-    --bg-secondary: #0f1323;        /* Section backgrounds */
-    --bg-card: #161b33;             /* Card backgrounds */
+  /* Dark Console Theme Colors */
+  --bg-primary: #0a0e27; /* Main background */
+  --bg-secondary: #0f1323; /* Section backgrounds */
+  --bg-card: #161b33; /* Card backgrounds */
 
-    /* Console Colors */
-    --primary-cyan: #00d9ff;        /* Primary accent */
-    --primary-blue: #0ea5e9;        /* Secondary accent */
-    --accent-purple: #a78bfa;       /* Purple accent */
-    --neon-green: #00ff88;          /* Terminal green */
-    --terminal-yellow: #fbbf24;     /* Warning/dates */
+  /* Console Colors */
+  --primary-cyan: #00d9ff; /* Primary accent */
+  --primary-blue: #0ea5e9; /* Secondary accent */
+  --accent-purple: #a78bfa; /* Purple accent */
+  --neon-green: #00ff88; /* Terminal green */
+  --terminal-yellow: #fbbf24; /* Warning/dates */
 
-    /* Text Colors */
-    --text-primary: #e2e8f0;        /* Main text */
-    --text-secondary: #94a3b8;      /* Secondary text */
-    --text-glow: #00d9ff;           /* Glowing text */
+  /* Text Colors */
+  --text-primary: #e2e8f0; /* Main text */
+  --text-secondary: #94a3b8; /* Secondary text */
+  --text-glow: #00d9ff; /* Glowing text */
 }
 ```
 
 ### Content Updates
+
 - **Personal Info**: Edit `index.html` hero section
 - **Experience**: Update timeline items in `#experience` section
 - **Projects**: Add/modify project cards in `#projects` section
@@ -131,33 +142,37 @@ Edit CSS variables in `styles.css`:
 - **Contact**: Change contact info in `#contact` section
 
 ### Adding Projects
+
 Duplicate this block in the `#projects` section:
 
 ```html
 <div class="project-card">
-    <h3>Your Project Name</h3>
-    <div class="project-tech">
-        <span class="tech-tag">Technology</span>
-        <span class="tech-tag">Framework</span>
-    </div>
-    <p class="project-date">Month Year</p>
-    <ul class="project-details">
-        <li>Feature or achievement 1</li>
-        <li>Feature or achievement 2</li>
-        <li>Feature or achievement 3</li>
-    </ul>
+  <h3>Your Project Name</h3>
+  <div class="project-tech">
+    <span class="tech-tag">Technology</span>
+    <span class="tech-tag">Framework</span>
+  </div>
+  <p class="project-date">Month Year</p>
+  <ul class="project-details">
+    <li>Feature or achievement 1</li>
+    <li>Feature or achievement 2</li>
+    <li>Feature or achievement 3</li>
+  </ul>
 </div>
 ```
 
 ## 🎭 Special Features
 
 ### Console Easter Egg
+
 Open the browser console (F12) to see a custom terminal-themed message with:
+
 - Cyan glowing text effects
 - Terminal symbols (>, $, →)
 - Contact information in neon green
 
 ### Animations
+
 - **Fade In Up** - Section content animates on scroll
 - **Glow Pulse** - Title glows with animated effect
 - **Cursor Blink** - Terminal cursor blinks next to name
@@ -165,6 +180,7 @@ Open the browser console (F12) to see a custom terminal-themed message with:
 - **Hover Lifts** - Cards lift and glow on hover
 
 ### Performance
+
 - Smooth 60fps animations using GPU-accelerated transforms
 - Intersection Observer for efficient scroll animations
 - Optimized CSS with custom properties
@@ -172,8 +188,8 @@ Open the browser console (F12) to see a custom terminal-themed message with:
 
 ## 🌟 Browser Support
 
-| Browser | Version |
-|---------|---------|
+| Browser | Version   |
+| ------- | --------- |
 | Chrome  | ✅ Latest |
 | Firefox | ✅ Latest |
 | Safari  | ✅ Latest |
@@ -181,14 +197,13 @@ Open the browser console (F12) to see a custom terminal-themed message with:
 
 ## 📝 To-Do / Future Enhancements
 
-- [ ] Add project screenshots/images
-- [ ] Implement downloadable resume PDF
+- [x] Add project screenshots/images
+- [x] Implement downloadable resume PDF
 - [ ] Add contact form with backend
 - [ ] Create blog section
-- [ ] Add testimonials carousel
-- [ ] Integrate analytics (Google Analytics)
+- [x] Integrate analytics (Google Analytics)
 - [ ] Add more terminal animations (typing effects)
-- [ ] Create particle.js background effect
+- [x] Create particle.js background effect
 - [ ] Add language toggle (i18n)
 - [ ] Implement service worker for offline support
 

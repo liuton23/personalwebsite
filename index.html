@@ -56,6 +56,15 @@
       content="https://liuton23.github.io/personalwebsite/preview.png"
     />
 
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WHWBT7XK74"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-WHWBT7XK74');
+    </script>
+
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -80,6 +89,7 @@
     </nav>
 
     <section id="hero">
+      <div id="particles-js"></div>
       <div class="container">
         <div class="hero-content">
           <h1>Tong Liu</h1>
@@ -569,6 +579,7 @@
       <img class="lightbox-img" id="lightbox-img" src="" alt="" />
     </div>
 
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

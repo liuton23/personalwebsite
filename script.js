@@ -152,6 +152,48 @@ function closeLightbox() {
     document.body.style.overflow = '';
 }
 
+// Particles.js - Hero background effect
+if (typeof particlesJS !== 'undefined') {
+    particlesJS('particles-js', {
+        particles: {
+            number: { value: 70, density: { enable: true, value_area: 800 } },
+            color: { value: ['#00d9ff', '#a78bfa', '#0ea5e9'] },
+            shape: { type: 'circle' },
+            opacity: { value: 0.4, random: true, anim: { enable: true, speed: 0.5, opacity_min: 0.1 } },
+            size: { value: 2.5, random: true },
+            line_linked: {
+                enable: true,
+                distance: 140,
+                color: '#00d9ff',
+                opacity: 0.15,
+                width: 1
+            },
+            move: {
+                enable: true,
+                speed: 1.2,
+                direction: 'none',
+                random: true,
+                straight: false,
+                out_mode: 'out',
+                bounce: false
+            }
+        },
+        interactivity: {
+            detect_on: 'canvas',
+            events: {
+                onhover: { enable: true, mode: 'repulse' },
+                onclick: { enable: true, mode: 'push' },
+                resize: true
+            },
+            modes: {
+                repulse: { distance: 90, duration: 0.4 },
+                push: { particles_nb: 3 }
+            }
+        },
+        retina_detect: true
+    });
+}
+
 // Console message for developers (terminal theme)
 console.log('%c> Hi there! 👋', 'font-size: 20px; font-weight: bold; color: #00d9ff; text-shadow: 0 0 10px rgba(0, 217, 255, 0.5);');
 console.log('%c$ Thanks for checking out the console!', 'font-size: 14px; color: #00ff88;');
