@@ -454,32 +454,14 @@
           and there's something about the slowness of it I really enjoy. Hope
           you like some of the shots from my rolls.
         </p>
-        <div class="photo-grid">
-          <figure class="photo-item">
-            <img src="photos/photo-1.jpg" alt="Film photo 1" loading="lazy" />
-            <figcaption></figcaption>
-          </figure>
-          <figure class="photo-item">
-            <img src="photos/photo-2.jpg" alt="Film photo 2" loading="lazy" />
-            <figcaption></figcaption>
-          </figure>
-          <figure class="photo-item">
-            <img src="photos/photo-3.jpg" alt="Film photo 3" loading="lazy" />
-            <figcaption></figcaption>
-          </figure>
-          <figure class="photo-item">
-            <img src="photos/photo-4.jpg" alt="Film photo 4" loading="lazy" />
-            <figcaption></figcaption>
-          </figure>
-          <figure class="photo-item">
-            <img src="photos/photo-5.jpg" alt="Film photo 5" loading="lazy" />
-            <figcaption></figcaption>
-          </figure>
-          <figure class="photo-item">
-            <img src="photos/photo-6.jpg" alt="Film photo 6" loading="lazy" />
-            <figcaption></figcaption>
-          </figure>
-        </div>
+        <div class="photo-grid" id="photo-grid"></div>
+        <script>
+          const photoCount = 9;
+          const grid = document.getElementById('photo-grid');
+          for (let i = 1; i <= photoCount; i++) {
+            grid.innerHTML += `<figure class="photo-item"><img src="photos/photo-${i}.jpg" alt="Film photo ${i}" loading="lazy" /><figcaption></figcaption></figure>`;
+          }
+        </script>
       </div>
     </section>
 
@@ -584,7 +566,9 @@
 
     <div class="lightbox" id="lightbox">
       <button class="lightbox-close" id="lightbox-close">&times;</button>
+      <button class="lightbox-prev" id="lightbox-prev">&#8249;</button>
       <img class="lightbox-img" id="lightbox-img" src="" alt="" />
+      <button class="lightbox-next" id="lightbox-next">&#8250;</button>
     </div>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>

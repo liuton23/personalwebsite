@@ -129,22 +129,45 @@ if (heroTitle) {
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightbox-img');
 const lightboxClose = document.getElementById('lightbox-close');
+const lightboxPrev = document.getElementById('lightbox-prev');
+const lightboxNext = document.getElementById('lightbox-next');
 
-document.querySelectorAll('.photo-item img').forEach(img => {
-    img.addEventListener('click', () => {
-        lightboxImg.src = img.src;
-        lightboxImg.alt = img.alt;
-        lightbox.classList.add('active');
-        document.body.style.overflow = 'hidden';
+let photoImgs = [];
+let currentPhotoIndex = 0;
+
+function openLightbox(index) {
+    currentPhotoIndex = index;
+    lightboxImg.src = photoImgs[index].src;
+    lightboxImg.alt = photoImgs[index].alt;
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function showPhoto(index) {
+    currentPhotoIndex = (index + photoImgs.length) % photoImgs.length;
+    lightboxImg.src = photoImgs[currentPhotoIndex].src;
+    lightboxImg.alt = photoImgs[currentPhotoIndex].alt;
+}
+
+// Photos are injected by inline script; wait for them to exist
+document.addEventListener('DOMContentLoaded', () => {
+    photoImgs = Array.from(document.querySelectorAll('.photo-item img'));
+    photoImgs.forEach((img, i) => {
+        img.addEventListener('click', () => openLightbox(i));
     });
 });
 
+lightboxPrev.addEventListener('click', (e) => { e.stopPropagation(); showPhoto(currentPhotoIndex - 1); });
+lightboxNext.addEventListener('click', (e) => { e.stopPropagation(); showPhoto(currentPhotoIndex + 1); });
 lightboxClose.addEventListener('click', closeLightbox);
 lightbox.addEventListener('click', (e) => {
     if (e.target === lightbox) closeLightbox();
 });
 document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('active')) return;
     if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') showPhoto(currentPhotoIndex - 1);
+    if (e.key === 'ArrowRight') showPhoto(currentPhotoIndex + 1);
 });
 
 function closeLightbox() {

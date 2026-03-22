@@ -1117,6 +1117,30 @@ footer::before {
     color: var(--primary-cyan);
 }
 
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    color: var(--text-secondary);
+    cursor: pointer;
+    background: none;
+    border: none;
+    line-height: 1;
+    padding: 0 16px;
+    transition: color 0.2s ease;
+    user-select: none;
+}
+
+.lightbox-prev { left: 16px; }
+.lightbox-next { right: 16px; }
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    color: var(--primary-cyan);
+}
+
 @media (max-width: 768px) {
     .photo-grid {
         grid-template-columns: repeat(2, 1fr);
