@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tong Liu - Software Developer</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230a0e27'/><text x='4' y='23' font-family='monospace' font-size='18' font-weight='bold' fill='%2300d9ff'>tl</text></svg>">
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230a0e27'/><text x='4' y='23' font-family='monospace' font-size='18' font-weight='bold' fill='%2300d9ff'>tl</text></svg>"
+    />
 
     <!-- SEO Meta Tags -->
     <meta
@@ -58,12 +61,17 @@
     />
 
     <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WHWBT7XK74"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-WHWBT7XK74"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-WHWBT7XK74');
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-WHWBT7XK74");
     </script>
 
     <link rel="stylesheet" href="styles.css" />
@@ -202,7 +210,7 @@
                 <h3>Software Developer III</h3>
                 <span class="company">Dayforce</span>
                 <span class="location">Toronto, ON</span>
-                <span class="period">Nov 2023 – Present</span>
+                <span class="period">Nov 2023 – Feb 2026</span>
               </div>
               <ul class="timeline-details">
                 <li>
@@ -457,7 +465,7 @@
         <div class="photo-grid" id="photo-grid"></div>
         <script>
           const photoCount = 9;
-          const grid = document.getElementById('photo-grid');
+          const grid = document.getElementById("photo-grid");
           for (let i = 1; i <= photoCount; i++) {
             grid.innerHTML += `<figure class="photo-item"><img src="photos/photo-${i}.jpg" alt="Film photo ${i}" loading="lazy" /><figcaption></figcaption></figure>`;
           }
